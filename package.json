@@ -1,0 +1,24 @@
+{
+  "name": "taf-advanced",
+  "version": "1.0.0",
+  "description": "Automated Testing Global Mentoring Program: Advanced [UA]",
+  "main": "index.js",
+  "scripts": {
+    "test": "npx playwright test",
+    "debug": "npx playwright test --debug"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/victoria-cloud/TAF-advanced.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/victoria-cloud/TAF-advanced/issues"
+  },
+  "homepage": "https://github.com/victoria-cloud/TAF-advanced#readme",
+  "devDependencies": {
+    "@playwright/test": "^1.32.3"
+  }
+}

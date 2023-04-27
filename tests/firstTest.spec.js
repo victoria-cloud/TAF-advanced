@@ -1,8 +1,11 @@
 import { test, expect } from '@playwright/test';
 import { primary_url ,USER_CREDENTIALS } from '../constants/constant.js';
+import defineConfig from '../playwright.config.js'
+
 
 test.beforeEach(async ({ page }) => {
-  await page.goto(primary_url);
+  console.log(defineConfig.use)
+  await page.goto(defineConfig.use.baseURL);
   await page.getByPlaceholder("Login").fill(USER_CREDENTIALS.login);
   await page.getByPlaceholder("Password").fill(USER_CREDENTIALS.password);
   await page.getByText('Login', { exact: true }).click();
@@ -11,8 +14,6 @@ test.beforeEach(async ({ page }) => {
 
 test.describe('New Todo', () => {
   test('should allow me to add todo items', async ({ page }) => {
-    let runLocation = process.env.RUN
-    console.log(`runLocation : ${runLocation}`)
     await expect(page.getByTitle('All Dashboards')).toHaveText('All Dashboards')
    });
  });

@@ -11,8 +11,8 @@ test.beforeEach(async ({ page }) => {
   await page.getByText('Login', { exact: true }).click();
 });
 
-test.describe('New Todo', () => {
-  test('should allow me to add todo items', async ({ page }) => {
+test.describe('First test', () => {
+  test('should check Dashbords page is open ', async ({ page }) => {
     await expect(page.getByTitle('All Dashboards')).toHaveText('All Dashboards')
    });
  });

@@ -26,7 +26,8 @@ module.exports = defineConfig({
   use: {
     /* Base URL to use in actions like `await page.goto('/')`. */
     //baseURL: 'http://127.0.0.1:8080',
-    baseURL: process.env.CI ? 'https://rp.epam.com' : process.env.baseURL,
+    //baseURL: process.env.CI ? 'https://rp.epam.com' : process.env.baseURL,
+    baseURL: process.env.baseURL,
     // Capture screenshot after each test failure.
     //screenshot: 'on',
     /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */

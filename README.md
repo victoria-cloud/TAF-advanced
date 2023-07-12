@@ -17,3 +17,5 @@ open cmd
 
 open new cmd in project's directory and run
 2. sonar-scanner
+
+# API-TESTING and UI-TESTING has different package.json !

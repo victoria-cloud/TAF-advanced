@@ -14,6 +14,5 @@ test.beforeEach(async ({ page }) => {
 test.describe('First test', () => {
   test('should check Dashbords page is open ', async ({ page }) => {
     await expect(page.getByTitle('All Dashboards')).toHaveText('All Dashboards')
-   });
- });
-
+  })
+})

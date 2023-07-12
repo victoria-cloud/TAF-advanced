@@ -14,5 +14,6 @@ Eslint usage:
 # Sonarcube
 open cmd
 1. docker run --name sonarqube --restart always -p 9000:9000 -d sonarqube
+
 open new cmd in project's directory and run
 2. sonar-scanner
